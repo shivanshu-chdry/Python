@@ -11,32 +11,32 @@ def speak(str):
     speak.Speak(str)
 
 time = int(datetime.datetime.now().hour)
-businessdata = requests.get('https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=ca45b92db24242bcb440a125fd0b86c6')
+businessdata = requests.get('https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=ca45b92db24242bcb440a125fd')
 businessresult = businessdata.json()
 print(businessresult['status'])
 businessnews = businessresult['articles']
 
-sportdata = requests.get('https://newsapi.org/v2/top-headlines?country=us&category=sports&apiKey=ca45b92db24242bcb440a125fd0b86c6')
+sportdata = requests.get('https://newsapi.org/v2/top-headlines?country=us&category=sports&apiKey=ca45b92db24242bcb440a125fd')
 sportresult = sportdata.json()
 sportnews = sportresult['articles']
 
-techdata = requests.get('https://newsapi.org/v2/top-headlines?country=us&category=technology&apiKey=ca45b92db24242bcb440a125fd0b86c6')
+techdata = requests.get('https://newsapi.org/v2/top-headlines?country=us&category=technology&apiKey=ca45b92db24242bcb440a125fd')
 techresult = techdata.json()
 technews = techresult['articles']
 
-entertainmentdata = requests.get('https://newsapi.org/v2/top-headlines?country=us&category=entertainment&apiKey=ca45b92db24242bcb440a125fd0b86c6')
+entertainmentdata = requests.get('https://newsapi.org/v2/top-headlines?country=us&category=entertainment&apiKey=ca45b92db24242bcb440a125fd')
 entertainmentresult = entertainmentdata.json()
 entertainmentnews = entertainmentresult['articles']
 
-politicdata = requests.get('https://newsapi.org/v2/top-headlines?country=us&category=politics&apiKey=ca45b92db24242bcb440a125fd0b86c6')
+politicdata = requests.get('https://newsapi.org/v2/top-headlines?country=us&category=politics&apiKey=ca45b92db24242bcb440a125fd')
 politicresult = politicdata.json()
 politicnews = politicresult['articles']
 
-healthdata = requests.get('https://newsapi.org/v2/top-headlines?country=us&category=health&apiKey=ca45b92db24242bcb440a125fd0b86c6')
+healthdata = requests.get('https://newsapi.org/v2/top-headlines?country=us&category=health&apiKey=ca45b92db24242bcb440a125fd')
 healthresult = healthdata.json()
 healthnews = healthresult['articles']
 
-sciencedata = requests.get('https://newsapi.org/v2/top-headlines?country=us&category=science&apiKey=ca45b92db24242bcb440a125fd0b86c6')
+sciencedata = requests.get('https://newsapi.org/v2/top-headlines?country=us&category=science&apiKey=ca45b92db24242bcb440a125fd')
 scienceresult = sciencedata.json()
 sciencenews = scienceresult['articles']
 
